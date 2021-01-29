@@ -4,7 +4,7 @@ request.send();
 request.onload = function () { 
     var data = JSON.parse(this.response);
     var region = data.filter((reg) => {
-         return reg.currencies = Dollar;
+         return reg.region='Asia';
     }).map((ele) => {
             return ele.name})
         console.log(region);
